@@ -1,0 +1,40 @@
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: $primary;
+    /*  Накладываем тень (ось x: 5px, ось y: 0,
+      размытие, цвет, непрозрачность) */
+    box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
+    /*  Блок фиксируется в точках равных top и left  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /*  Происходит наслоение блоков
+      (1000 будет вверху, 500 будет снизу)  */
+    z-index: 1000;
+}
+
+.sidebar__header {
+    height: 180px;
+    background-color: $secondary;
+
+    img {
+    /*  Отображается как блочный элемент  */
+        display: block;
+        width: 100%;
+        height: 100%;
+    /*  Изображение выравнивается под размеры блока  */
+        object-fit: cover;
+    }
+}
+
+.sidebar__content {
+    padding: 0 2rem;
+    margin-top: -5rem;
+}
+
+.sidebar__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}

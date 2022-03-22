@@ -1,0 +1,39 @@
+.btn {
+/*  Элементы располагаются поледовательно  */
+    display: inline-block;
+/*  Выравнивание по вертикали вверх  */
+    vertical-align: top;
+
+    padding: 1.12em 2.1em;
+    border-radius: 3em;
+    background: $secondary;
+    border: none;
+/*  Меняем курсор при наводке  */
+    cursor: pointer;
+/*  Наследование от родителя  */
+    font-family: inherit;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
+    font-weight: 500;
+    color: $white;
+    text-decoration: none;
+/*  Линейный переход background-color  */
+    transition: background-color 0.2s linear;
+
+/*  Модификаторы класса btn  */
+    &--red {
+        background-color: $red;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+            background-color: darken($red, 5%);
+        }
+    }
+
+    &--blue {
+        background-color: $blue;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+            background-color: darken($blue, 5%);
+        }
+    }
+}

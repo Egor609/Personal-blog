@@ -1,0 +1,10 @@
+.social {
+  /*  Flexbox контейнер  */
+  display: flex;
+  /*  Выравнивает блоки по центру  */
+  justify-content: center;
+}
+
+.social__item {
+  margin: 0 0.75rem;
+}
