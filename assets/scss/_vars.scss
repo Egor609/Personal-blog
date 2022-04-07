@@ -1,9 +1,26 @@
-$primary:   #202020;
-$secondary: #121212;
-$white:     #fff;
-$black:     #000;
-$red:       #ED3024;
-$blue:      #3137C9;
+$background: darken(#e9ecf1, 8%);
+$primary:    lighten(#e9ecf1, 3%);
+$secondary:  darken(#e9ecf1, 2%);
+$additional: darken(#e9ecf1, 3%);
+$white:      #fff;
+$black:      #000;
+$red:        lighten(#ED3024, 10%);
+$blue:       lighten(#3b64a3, 5%);
+$shadow:     lighten(#000, 50%);
+$text:       #000000;
+$text-2:     darken(#D2D2D2, 50%);
+
+//$background: #181818;
+//$primary:    #202020;
+//$secondary:  #121212;
+//$additional: #0D0D0D;
+//$white:      #fff;
+//$black:      #000;
+//$red:        #ED3024;
+//$blue:       #3137C9;
+//$shadow:     #000;
+//$text:       #fff;
+//$text-2:     #D2D2D2;
 
 $z-index-sidebar: 1000;
 $z-index-header:  1000;

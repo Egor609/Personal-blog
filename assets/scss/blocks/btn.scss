@@ -15,7 +15,7 @@
     font-size: 1.2rem;
     line-height: 1.1rem;
     font-weight: 500;
-    color: $white;
+    color: $text;
     text-decoration: none;
 /*  Линейный переход background-color  */
     transition: background-color 0.2s linear;
@@ -23,7 +23,7 @@
 /*  Модификаторы класса btn  */
     &--red {
         background-color: $red;
-        box-shadow: 0 7px 17px rgba($black, 0.2);
+        box-shadow: 0 7px 17px rgba($shadow, 0.2);
         &:hover {
             background-color: darken($red, 5%);
         }
@@ -31,7 +31,7 @@
 
     &--blue {
         background-color: $blue;
-        box-shadow: 0 7px 17px rgba($black, 0.2);
+        box-shadow: 0 7px 17px rgba($shadow, 0.2);
         &:hover {
             background-color: darken($blue, 5%);
         }

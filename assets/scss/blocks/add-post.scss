@@ -3,7 +3,7 @@
     margin-bottom: 3rem;
 
     background-color: $secondary;
-    box-shadow: 0 15px 25px rgba($black, .45);
+    box-shadow: 0 15px 25px rgba($shadow, .45);
     border-radius: 5px;
 }
 
@@ -25,10 +25,10 @@
 
     font-size: 1.5rem;
     font-family: inherit;
-    color: $white;
+    color: $text;
 
     &::placeholder {
-        color: #D2D2D2;
+        color: $text-2;
     }
 }
 
@@ -52,14 +52,14 @@
 }
 
 .add-post__file {
-    background: #EBEBEB url(../images/add-photo.svg) center no-repeat;
+    background: darken(#EBEBEB, 10%) url(../images/add-photo.svg) center no-repeat;
 
     input {
         display: none;
     }
 
     &:hover {
-        background-color: darken(#EBEBEB, 5%)
+        background-color: darken(#EBEBEB, 15%)
     }
 }
 

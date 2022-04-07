@@ -6,8 +6,7 @@
     margin: 0 auto 2rem;
 /*  Позволяет наслоить на другой блок  */
     position: relative;
-    border: 2px solid $white;
-    box-shadow: 0 7px 20px rgba($black, 0.25);
+    box-shadow: 0 7px 20px rgba($shadow, 0.25);
 /*  Закругляем аватарку  */
     border-radius: 50%;
 }
@@ -15,6 +14,7 @@
 .profile__name {
     font-size: 1.8rem;
     text-align: center;
+    color: $text;
 }
 
 .profile__prof {
@@ -22,7 +22,8 @@
     font-size: 1.4rem;
 /*  Толщина шрифта  */
     font-weight: 300;
-    color: #DEDEDE;
+//    color: #DEDEDE;
+    color: lighten($text, 2%);
     text-align: center;
 }
 
@@ -30,8 +31,9 @@
     padding: 3rem 0;
     margin: 3rem 0;
     font-size: 1.2rem;
+    color: $text;
     line-height: 1.8;
     text-align: center;
-    border-top: 1px solid #1C1C1C;
-    border-bottom: 1px solid #1C1C1C;
+    border-top: 1px solid rgba(#1C1C1C, .2);
+    border-bottom: 1px solid rgba(#1C1C1C, .2);
 }

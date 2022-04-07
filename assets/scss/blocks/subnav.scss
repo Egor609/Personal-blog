@@ -1,11 +1,11 @@
 .subnav {
     display: none;
-    width: 16.5rem;
+    width: 16.9rem;
     padding: .5rem 0;
 
     background-color: $blue;
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 4px 4px rgba($black, .25);
+    box-shadow: 0 4px 4px rgba($shadow, .25);
 
     position: absolute;
     top: 100%;
@@ -23,6 +23,6 @@
     transition: background-color .2s ease-in-out;
 
     &:hover {
-        background-color: darken($blue, 7%);
+        background-color: darken($blue, 5%);
     }
 }
