@@ -25,6 +25,7 @@
         background-color: $red;
         box-shadow: 0 7px 17px rgba($shadow, 0.2);
         &:hover {
+            text-decoration: none;
             background-color: darken($red, 5%);
         }
     }
@@ -35,5 +36,13 @@
         &:hover {
             background-color: darken($blue, 5%);
         }
+    }
+
+    &--rounded {
+        border-radius: .41em
+    }
+
+    &--sm {
+        padding: 0.7em 1.25em;
     }
 }

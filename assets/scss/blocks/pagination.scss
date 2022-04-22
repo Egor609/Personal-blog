@@ -13,7 +13,6 @@
     width: 4rem;
     height: 4rem;
 
-
     background-color: $additional;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($shadow, .15);
@@ -27,6 +26,7 @@
     transition: background-color .2s linear;
 
     &:hover {
+        text-decoration: none;
         background-color: lighten($additional, 4%);
     }
 
