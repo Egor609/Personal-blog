@@ -18,6 +18,10 @@ body {
 /*  Межстрочный отступ  */
     line-height: 1.5;
     color: $white;
+
+//    &.no-scroll {
+//        overflow: hidden;
+//    }
 }
 
 *,
@@ -56,5 +60,12 @@ a {
 @import "blocks/pagination";
 
 @import "blocks/related";
-@import "blocks/comments";
 @import "blocks/form";
+@import "blocks/comments";
+
+@import "blocks/work";
+@import "blocks/tags";
+
+@import "blocks/cabinet";
+
+@import "blocks/modal";

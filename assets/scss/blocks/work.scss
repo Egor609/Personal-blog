@@ -1,0 +1,55 @@
+.work {
+    display: flex;
+    margin-bottom: 3rem;
+    overflow: hidden;
+
+    background-color: $primary;
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba($shadow, 35%)
+}
+
+.work__preview {
+    width: 31rem;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.work__content {
+    display: flex;
+//  Находится всё в одном столбце
+    flex-direction: column;
+
+    padding: 2.5rem;
+    max-width: 29rem;
+}
+
+.work__title {
+    margin-bottom: 3rem;
+
+    font-size: 2.4rem;
+    color: $text;
+    font-weight: 500;
+
+    a {
+        color: inherit;
+    }
+}
+
+.work__description {
+    margin-bottom: 3rem;
+
+    font-size: 1.6rem;
+    color: $text-2;
+    font-weight: 300;
+    line-height: 1.68;
+}
+
+.work__footer {
+    margin-top: auto;
+    text-align: right;
+}

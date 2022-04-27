@@ -4,7 +4,7 @@
     background-color: $primary;
     /*  Накладываем тень (ось x: 5px, ось y: 0,
       размытие, цвет, непрозрачность) */
-    box-shadow: 5px 0 15px rgba(5, 5, 5, 0.1);
+    box-shadow: 5px 0 35px rgba($shadow, 0.1);
     /*  Блок фиксируется в точках равных top и left  */
     position: fixed;
     top: 0;
