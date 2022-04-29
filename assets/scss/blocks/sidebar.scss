@@ -12,10 +12,28 @@
     /*  Происходит наслоение блоков
       (1000 будет вверху, 500 будет снизу)  */
     z-index: 1000;
+
+    @include breakpoint($tablet-bp) {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 4.3rem);
+        padding-bottom: 1.5rem;
+//      При поворе телефона позволяет скролить sidebar
+        overflow: auto;
+
+        top: 4.3rem;
+
+        transform: translatex(-100%);
+        transition: transform .2s linear;
+
+        .show-sidebar & {
+            transform: translatex(0);
+        }
+    }
 }
 
 .sidebar__header {
-    height: 180px;
+    height: 18rem;
     background-color: $secondary;
 
     img {
@@ -26,11 +44,18 @@
     /*  Изображение выравнивается под размеры блока  */
         object-fit: cover;
     }
+
+    @include breakpoint($tablet-bp) {
+        height: 10rem;
+    }
 }
 
 .sidebar__content {
     padding: 0 2rem;
-    margin-top: -5rem;
+
+    @include breakpoint($tablet-bp) {
+        flex-grow: 1;
+    }
 }
 
 .sidebar__footer {

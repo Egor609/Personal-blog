@@ -3,6 +3,10 @@
   display: flex;
   /*  Выравнивает блоки по центру  */
   justify-content: center;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }
 
 .social__item {

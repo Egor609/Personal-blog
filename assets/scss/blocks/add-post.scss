@@ -5,6 +5,10 @@
     background-color: $secondary;
     box-shadow: 0 10px 10px rgba($shadow, .3);
     border-radius: 5px;
+
+    @include breakpoint($mobile-bp) {
+        padding: 1.5rem;
+    }
 }
 
 .add-post__form {
@@ -15,13 +19,15 @@
 
 .add-post__textarea {
     display: block;
-    width: 80%;
+    flex-grow: 1;
     height: 2.6rem;
 
     border: none;
     background: transparent;
-/*  Отключаем возможность изменить размер  */
+//  Нельзя изменять размер
     resize: none;
+//  Убирает прокрутку
+    overflow: hidden;
 
     font-size: 1.5rem;
     font-family: inherit;
@@ -33,9 +39,14 @@
 }
 
 .add-post__form-actions {
-    width: 20%;
+    width: 12rem;
+    flex-shrink: 0;
     display: flex;
     justify-content: flex-end;
+
+    @include breakpoint($mobile-bp) {
+        width: 9rem;
+    }
 }
 
 .add-post__file,
@@ -49,6 +60,11 @@
     cursor: pointer;
 
     transition: background-color .2s linear;
+
+    @include breakpoint($mobile-bp) {
+        width: 3.4rem;
+        height: 3.4rem;
+    }
 }
 
 .add-post__file {
@@ -61,13 +77,24 @@
     &:hover {
         background-color: darken(#EBEBEB, 15%)
     }
+
+    @include breakpoint($mobile-bp) {
+        backgroun-size: 1.8rem;
+    }
 }
 
 .add-post__send {
     margin-left: 1.5rem;
-    background-color: $blue;
+    font-size: 0;
+    color: transparent;
+
+    background: $blue url(../images/send.svg) center no-repeat;
 
     &:hover {
         background-color: darken($blue, 5%)
+    }
+
+    @include breakpoint($mobile-bp) {
+        backgroun-size: 1.5rem;
     }
 }

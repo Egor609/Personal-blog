@@ -4,6 +4,17 @@
         max-width: 28rem;
         margin: 0 auto;
     }
+
+    &--bgc {
+        padding: 3rem;
+        background-color: $secondary;
+        box-shadow: 0 15px 25px rgba($shadow, .35);
+        border-radius: 5px;
+
+        @include breakpoint($mobile-bp) {
+             padding: 2rem;
+        }
+    }
 }
 .form__group {
     margin-bottom: 1.5rem;

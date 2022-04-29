@@ -10,6 +10,7 @@ $shadow:     lighten(#000, 50%);
 $text:       #000;
 $text-2:     darken(#D2D2D2, 50%);
 $light-dark: #828282;
+$borders:    rgba(#1C1C1C, .2);
 
 //$background: #181818;
 //$primary:    #202020;
@@ -28,3 +29,6 @@ $z-index-header:  1000;
 $z-index-modal:   1010;
 
 $sidebar-width: 300px;
+
+$tablet-bp: 991px;
+$mobile-bp: 575px;

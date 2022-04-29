@@ -1,3 +1,14 @@
+.profile {
+    margin-top: -5rem;
+
+    @include breakpoint($tablet-bp) {
+        margin-top: -1rem;
+        position: relative;
+
+        border-bottom: 1px solid $borders;
+    }
+}
+
 .profile__avatar {
     display: block;
     width: 10rem;
@@ -9,22 +20,46 @@
     box-shadow: 0 7px 20px rgba($shadow, 0.25);
 /*  Закругляем аватарку  */
     border-radius: 50%;
+
+    @include breakpoint($tablet-bp) {
+        width: 6.5rem;
+        height: 6.5rem;
+
+        margin-left: 0;
+        position: absolute;
+        left: 0;
+    }
+}
+
+.profile__header {
+    margin-bottom: 2rem;
+    text-align: center;
+
+    @include breakpoint($tablet-bp) {
+        padding-top: 2rem;
+        padding-left: 8rem;
+        text-align: left;
+    }
 }
 
 .profile__name {
     font-size: 1.8rem;
-    text-align: center;
     color: $text;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 1.5rem;
+    }
 }
 
 .profile__prof {
-    margin-bottom: 2rem;
     font-size: 1.4rem;
 /*  Толщина шрифта  */
     font-weight: 300;
-//    color: #DEDEDE;
     color: lighten($text, 2%);
-    text-align: center;
+
+    @include breakpoint($tablet-bp) {
+        font-size: 1.2rem;
+    }
 }
 
 .profile__text {
@@ -34,6 +69,10 @@
     color: $text;
     line-height: 1.8;
     text-align: center;
-    border-top: 1px solid rgba(#1C1C1C, .2);
-    border-bottom: 1px solid rgba(#1C1C1C, .2);
+    border-top: 1px solid $borders;
+    border-bottom: 1px solid $borders;
+
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
 }

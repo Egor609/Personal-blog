@@ -9,6 +9,12 @@
         padding-left: 3rem;
         margin-top: 3rem;
     }
+
+    @include breakpoint($mobile-bp) {
+        > .comments {
+            padding-left: 1.5rem;
+        }
+    }
 }
 
 .comments__header {
