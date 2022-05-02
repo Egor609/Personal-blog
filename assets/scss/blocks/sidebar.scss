@@ -52,14 +52,14 @@
 
 .sidebar__content {
     padding: 0 2rem;
-
-    @include breakpoint($tablet-bp) {
-        flex-grow: 1;
-    }
 }
 
 .sidebar__footer {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 2rem;
+
+    @include breakpoint($tablet-bp) {
+        margin: 3rem 0 5rem;
+    }
 }

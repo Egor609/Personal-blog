@@ -20,9 +20,14 @@ body {
     line-height: 1.5;
     color: $white;
 
-    &.no-scroll,
-    &.show-sidebar {
+    &.no-scroll {
         overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp) {
+        &.show-sidebar {
+            overflow: hidden;
+        }
     }
 }
 
@@ -56,8 +61,6 @@ a {
 
 @import "blocks/main";
 @import "blocks/container";
-@import "blocks/stories";
-@import "blocks/add-post";
 @import "blocks/post";
 @import "blocks/embed";
 @import "blocks/pagination";
